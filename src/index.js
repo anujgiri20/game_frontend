@@ -7,11 +7,11 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Loginuser from './login';
 import Stonegame from './Stonegame';
-
+import {Main} from "./login"
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-  <App />
+  <Main />
     </Router>
   </React.StrictMode>,
   document.getElementById('root')

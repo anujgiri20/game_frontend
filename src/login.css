@@ -4,16 +4,26 @@ background-color:rgba(95,55,40,0.6);
 padding:50px;
 width:30%;
 margin:auto;
+background-image: url("../src/img/wal.jpg");
+background-repeat: no-repeat;
 
+ background-position:center;
+ background-size:cover;
 padding-bottom:100px;
 
 border-radius: 20px;
 font-weight: bolder;
 
-margin-top:110px;
+margin-top:30px;
 
 border:0.3px solid white;
 
+box-shadow: 2px 5px 0px white,
+4px 4px 0px white,
+5px 5px 0px white,
+6px 6px 0px white,
+7px 7px 0px  white,
+8px 8px 0px white;
 
 }
 
@@ -76,11 +86,7 @@ height: 40px;
 .logindiv{
  background-color:#e9d1ca;
  padding-bottom:100px;
- background-image: url("../src/img/wal.jpg");
- background-repeat: no-repeat;
-
- background-position:center;
- background-size:cover;
+ background: radial-gradient(circle,#1f3756,#141539);
 }
 .btn
 {
@@ -133,4 +139,10 @@ border:0px;
     border:0px;
     height:40px;
 
+}
+
+
+.logindiv_{
+    background: radial-gradient(circle,#1f3756,#141539);
+    padding-bottom:0px;
 }

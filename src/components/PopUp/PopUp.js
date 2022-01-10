@@ -3,7 +3,7 @@ import styled from "styled-components";
 import "./pop.css"
 import NavElement from "./NavElement/NavElement";
 
-
+import "./pop.css"
 
 
 
@@ -25,13 +25,20 @@ const PopUp = ({ target , setTarget , setShowPopUp , resultMode , setResultMode 
                 <div className="target_div_1">
                     {
                         resultMode.score[0] > resultMode.score[1] ?
-                           <div> "YOU WON THE GAME"</div> : <div>"COMPUTER WON THE GAME"</div>
+                           <div style={{padding:"20px"}}> "YOU WON THE GAME"</div> : <div style={{padding:"20px"}}>"COMPUTER WON THE GAME"</div>
                     }
                     <div>GAME OVER</div>
-                    <div id="button" onClick={ newGame } >NEWGAME</div>   
+                    <button style={{
+                        margin:"20px",
+                        width:"80%",
+                        marginTop:"20px",
+                        marginBottom:"20px"
+                    }} className="btn" onClick={ newGame } >NEWGAME</button>   
                 </div>:
                 <div>
-                <h2>Choose the target score</h2>
+                <h2
+               className="head"
+                >Choose the target score</h2>
                     <NavElement className="navelement" target={target} setTarget={setTarget} setShowPopUp={setShowPopUp} />
                     <button className="btn" onClick={() => setShowPopUp(false) } >OK</button>
                    

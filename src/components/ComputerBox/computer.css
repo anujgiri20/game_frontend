@@ -1,0 +1,12 @@
+.computer{
+    background-color:#18191a;
+    border:1px solid white;
+    border-radius:15px;
+    margin-top:95px;
+    width :40%;
+    display:flex;
+    flex-direction:column;
+ text-align: center;
+ padding-bottom: 30px;
+
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import "./login.css"
-import { useState,useEffect } from "react"
+import { useState, useEffect } from "react"
 import Axios from "axios";
 import { useHistory } from "react-router-dom";
 import { GiConsoleController } from "react-icons/gi";
@@ -8,7 +8,25 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import App from "./App";
 
 
+export function Main() {
+    return (
+        <>
+            <Link to="/" />
+            <Link to="/stonegame" />
+            <Switch>
+                <Route exact path="/">
+                    <Loginuser />
+                </Route>
+                <Route >
+                   <App />
 
+
+                </Route>
+            </Switch>
+
+        </>
+    )
+}
 
 
 function Loginuser() {
@@ -58,9 +76,9 @@ function Loginuser() {
                 if ((response.data.messege) == 'valid logged in') {
 
                     localStorage.setItem("access-token", response.data.token)
-                  
+                   
                     alert("login Succesfull")
-                    history.push("/about")
+                    history.push("/stonegame")
                 }
                 else {
                     var msg_login = response.data
@@ -69,7 +87,7 @@ function Loginuser() {
                     alert(msg_login)
 
                 }
-            })
+            }).catch((err) => alert("user not registered"))
         } catch (err) {
             console.log(err)
         }
@@ -207,13 +225,13 @@ function Loginuser() {
                     </div>
                 }
             </div>
-        
+
 
 
         </>
     )
 }
 
+
+
 export default Loginuser;
-
-

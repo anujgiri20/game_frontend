@@ -1,9 +1,11 @@
 import React from "react";
-
+import "./drop.css"
 const DropElements = ({ item , setTarget , setShowDropdown }) => {
     return(
-        <div onClick={ () => { setTarget(item); setShowDropdown(false); } } >
-            <span>{ item }</span>
+        <div className="dropdown_div" onClick={ () => { setTarget(item); setShowDropdown(false); } } >
+            <span
+            className="drop_span"
+            >{ item }</span>
         </div>
     );
 }

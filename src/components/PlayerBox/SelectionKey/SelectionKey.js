@@ -1,28 +1,20 @@
 import React from "react";
 import styled from "styled-components";
+import stone from "./images/icon-rock.png"
+import paper from "./images/icon-paper.png"
+import scissor from "./images/icon-scissors.png"
+import "./selection.css"
 
-const Div = styled.div`
-    height:10vh;
-    width :50%;
-    border:1px solid white;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:yellow;
-    background-color:black;
-    border-radius:10px;
-    &:hover{
-        border:1px solid yellow;
-        color:black;
-        background-color:yellow;
-    }
-`;
-
+var  stone_var  = "STONE"
+var  paper_var  = "PAPER"
+var  SCISSOR_var = "SCISSOR"
 const SelectionKey = ({ value , resultMode , validator }) => {
     return (
-        <Div onClick={ () => !resultMode.value && validator(value) } >
-            <div>{value}</div>
-        </Div>
+        <div className="player_div" onClick={ () => !resultMode.value && validator(value) } >
+            {
+             (stone_var == value) ? <div><img src={stone} /></div> : ((paper_var == value) ? <div><img src={paper} /></div> : ((SCISSOR_var == value) ? <div><img src={scissor} /></div> : "")) 
+            }
+        </div>
     );
 }
 

@@ -1,40 +1,33 @@
 import React from "react";
 import styled from "styled-components";
 import SelectionKey from "../PlayerBox/SelectionKey/SelectionKey";
+import "./computer.css"
 
-const Div = styled.div`
-    background-color:#18191a;
-    border:1px solid white;
-    border-radius:15px;
-    height:60vh;
-    width :40%;
-    display:flex;
-    flex-direction:column;
-    justify-content:${ ({change}) => change?"space-evenly":"center" };
-    align-items:center;
-    &>div{ text-align:center; }
-`;
 const ComputerBox = ({ resultMode }) => {
     return (
-        <Div change={resultMode.value} >
+        <div className="computer" change={resultMode.value} >
             {
                 resultMode.value === false ? 
                 <> 
-                    <div>Computer Selected one.</div> 
-                    <div>It's your turn</div>
+                    <div > <p style={{
+                        marginTop:"20px"
+                    }} className="p_game">Computer Selected one.</p></div> 
+                    <div><p className="p_game">It's your turn</p></div>
                 </> :
                 <>
-                    <div>COMPUTER</div>
+                    <div><p style={{
+                        marginTop:"20px"
+                    }} className="p_game">COMPUTER</p></div>
                     <SelectionKey value={resultMode.computer} resultMode={resultMode} />
                     <div>
                         {
-                            resultMode.result==="PASS" ? "FAIL" :
-                                resultMode.result==="FAIL" ? "PASS" : "DRAW" 
+                            resultMode.result=== "PASS" ? <p className="p_game">FAIL</p> :
+                                resultMode.result=== "FAIL" ? <p className="p_game">PASS</p>:<p className="p_game">DRAW</p>
                         }
                     </div>
                 </>
             }
-        </Div>
+        </div>
     );
 }
 

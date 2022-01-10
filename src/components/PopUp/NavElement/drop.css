@@ -1,0 +1,64 @@
+.drop_down{
+    padding:10px;
+    position: absolute;
+    z-index:100;
+    box-shadow: 19px 10px 5px 1px #a46e0a;
+    border:1px solid #000000;
+    border:0px;
+   width: 20%;;
+   transition: 2s;
+   background-color: #ec9e0e;
+
+}
+
+.dropdown_div{
+   
+    margin:5px;
+    background-color: transparent;
+    
+}
+
+.drop_span{
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #3b4363;
+
+    font-weight: 700;
+    cursor: pointer;
+    
+}
+.drop_span_{
+    font-family: 'Press Start 2P', cursive;
+    
+    font-size: 1.3rem;
+    color: #3b4363;
+
+    font-weight: 700;
+    text-align: center;
+    margin:auto;
+    padding:10px;
+    border:1px solid white;
+    padding: 0.75rem 2.5rem;
+    background-color: #fff;
+    color: #2a46c0;
+    border-radius: 5px;
+
+   
+}
+.drop_down:hover{
+    color:red;
+}
+/* 
+.drop_down_pop
+{
+    padding:10px;
+    border:1px solid white;
+    padding: 0.75rem 2.5rem;
+    background-color: #fff;
+    color: #2a46c0;
+    border-radius: 5px;
+    width:20%;
+   
+    margin:auto;
+} */

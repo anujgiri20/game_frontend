@@ -65,7 +65,6 @@ function App() {
             <>
                 <div className="links">
                 
-                    <Link to="/" />
                     <Link to="/sudo" />
                     <Link to="/stonegame" />
 
@@ -81,9 +80,7 @@ function App() {
                 </div>
                 <Switch>
                
-                    <Route exact path="/">
-                        <Loginuser />
-                    </Route>
+                    
                     <Route exact path="/sudo">
                         <TicTacToe />
                     </Route>
@@ -100,13 +97,6 @@ function App() {
 
 
 
-    function Home() {
-        return (
-            <>
-                <h1>anuj</h1>
-            </>
-        )
-    }
 
 
 

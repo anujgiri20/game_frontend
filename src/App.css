@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background: radial-gradient(circle,#1f3756,#141539);
   flex-direction: column;
 }
 
@@ -15,6 +15,14 @@
   flex-wrap: wrap;
   height: 20rem;
   width: 20rem;
+  
+  box-shadow: 2px 5px 0px white,
+                3px 6px 0px white,
+                4px 7px 0px white,
+                5px 8px 0px white,
+                6px 9px 0px white,
+                7px 10px 0px white;
+
 }
 
 .TicTacToeblock {
@@ -27,6 +35,12 @@
   align-items: center;
   font-size: 3rem;
   font-weight: bold;
+  box-shadow: 2px 5px 0px white,
+  1px 1px 0px #ec9e0e,
+  2px 2px 0px #ec9e0e,
+  3px 3px 0px #ec9e0e,
+  4px 4px 0px #ec9e0e,
+  5px 5px 0px #ec9e0e;
 }
 .StatusBar {
   color: white;
@@ -43,12 +57,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top:50px;
+  border:0px;
+  
+
+
 }
 .Reset button {
   height: 3rem;
   color: black;
   width: 4rem;
   border-radius: 8px;
+
+  box-shadow: 2px 5px 0px white,
+  1px 1px 0px #ec9e0e,
+  2px 2px 0px #ec9e0e,
+  3px 3px 0px #ec9e0e,
+  4px 4px 0px #ec9e0e,
+  5px 5px 0px #ec9e0e;
 }
 
 

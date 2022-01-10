@@ -1,14 +1,19 @@
 .heading{
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: red;
     -webkit-text-stroke-color: #fff;
+    
     -webkit-text-stroke-width: 0.049em;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2rem;
+    font-family: 'Press Start 2P', cursive;
+  margin-top:70px;
+  margin-bottom:70px;
+  text-align: center;
 }
 .score{
     background-color:rgba(255, 255, 255, 0.1);
     margin-top:10px;
-    padding:10px;
+    padding:20px;
     border-radius:10px;
     box-shadow: 1px 1px 20px white;
     
@@ -21,4 +26,20 @@
     }
 
    
+}
+
+.p_game{
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 700;
+    font-size: 1rem;
+    display:inline-block;
+    margin-top:45px;
+
+}
+.p_game_
+{
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 700;
+    font-size: 1rem;
+    display:inline-block;
 }

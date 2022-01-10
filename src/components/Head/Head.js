@@ -7,7 +7,7 @@ const Div = styled.div`
   justify-content:center;
   align-items:center;
   min-height:10vh;
-  width:100vw;
+ 
   padding:5px;
   box-sizing:border-box;
   color:white;
@@ -22,6 +22,7 @@ const Head = ({ score }) => {
       <Div>
           <div
           className="heading"
+       
           >STONE PAPER SCISSOR</div>
           <div 
           className="score"
@@ -29,7 +30,7 @@ const Head = ({ score }) => {
               fontSize:"1.3rem",
               fontStyle:" Open Sans, sans-serif"
           }}
-          >SCORE: {score[0]} - {score[1]} </div>
+          ><p className="p_game_">SCORE</p> : <p className="p_game_">{score[0]} </p> <p className="p_game_">-</p>  <p className="p_game_">{score[1]} </p> </div>
       </Div>
   );
 }

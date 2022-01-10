@@ -8,7 +8,7 @@ import ComputerBox from "./components/ComputerBox/ComputerBox";
 import "./login.css"
 const Div = styled.div`
   height:90vh;
-  width:100vw;
+  
   display:flex;
   justify-content:space-evenly;
   align-items:center;
@@ -55,9 +55,9 @@ const Stonegame = () => {
 
   return ( 
     <div
-   className="logindiv"
+   className="logindiv_"
    style={{
-     paddingBottom:"300px"
+     paddingBottom:"110px"
    }}
     onClick={ () => resultMode.value === true && 
         setResultMode({ value:false , result:resultMode.result , user:resultMode.user , computer:resultMode.computer , score:resultMode.score} )}> 
